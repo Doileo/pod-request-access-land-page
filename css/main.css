@@ -1,0 +1,85 @@
+/*-------------------*/
+/* Custom properties */
+/*-------------------*/
+
+:root {
+    /* colors */
+    --clr-soft-green: 157 74% 62%;
+    --clr-dark-desaturated-blue: 225 26% 23%;
+    --clr-dark-blue: 224 35% 11%;
+    --clr-white: 0 0% 100%;
+    --clr-desaturated-blue: 225 21% 45%;
+    --clr-light-blue: 225 40% 83%;
+}
+
+/*-------------------*/
+/* Reset             */
+/*------------------ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+p {
+    margin: 0;
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh; /* it prevents short pages */
+    font-family: 'Chivo', sans-serif;
+}
+
+/* make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off*/
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+/*------------------*/
+/* Utility classes  */
+/*------------------*/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+/* colors */
+.text-white { color: hsl( var(--clr-white) ); }
+.text-green { color: hsl( var(--clr-soft-green) ); }
+.text-light-blue { color: hsl( var(--clr-light-blue) ); }
+
+/* typography */
+
+.uppercase { text-transform: uppercase; }
