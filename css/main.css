@@ -171,7 +171,13 @@ form .input {
     width: 100%;
     background-color: #2c344b;
     padding-left: 32px;
+    transition: .3s border-color;
 }
+
+form .input:hover {
+    border: 1px solid #aaa;
+}
+
 
 form .button {
     margin-top: 20px;
@@ -182,6 +188,95 @@ form .button {
 
 .footer-image {
     display: none;
+}
+
+/* Tablet styles here */
+
+@media (min-width: 768px) {
+    body {
+        min-height: 80vh;
+    }
+
+    body::before {
+      background-image: url(../img/tablet-image-host.jpg);
+      opacity: 1;
+      right: -70px;
+      left: 30%;
+      bottom: 400px;
+    }
+
+    #wrapper {
+        max-width: 690px;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        min-height: 258px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: #121725;
+        height: 509px;
+        width: 92%;
+    }
+
+    .description-title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 56px;
+        padding-top: 92px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .description-info {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 28px;
+        text-align: left;
+        width: 75%;
+    }
+
+    .podcast-content {
+        order: 2;
+        width: 536px;
+        margin: 50px 0 60px 0;
+    }
+
+    form {
+        position: relative;
+        width: 427px;
+        margin-top: 45px;
+    }
+
+    form .input,
+    form .button {
+        height: 56px;
+    }
+
+    form .button {
+        position: absolute;
+        top: -20px;
+        right: 5px;
+        width: 162px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer-image {
+        display: inline;
+        position: absolute;
+        left: 20px;
+        bottom: -240px;
+    }
 }
 
 
