@@ -279,6 +279,90 @@ form .button {
     }
 }
 
+/* Desktop styles here */
+
+@media (min-width: 1280px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    body::before {
+        background-image: url(../img/desktop-image-host.jpg);
+        opacity: 0.8;
+        top: 102px;
+        bottom: -33px;
+        right: -120px;
+    }
+
+    #wrapper {
+        max-width: 1275px;
+    }
+
+    header {
+        justify-content: flex-start;
+    }
+
+    header .logo {
+        position: absolute;
+        top: 102px;
+        left: 40px;
+    }
+
+    main {
+        width: 60%;
+    }
+
+    .content-wrapper {
+        position: absolute;
+        top: 231px;
+        left: 40px;
+        width: 723px;
+    }
+
+    .description-title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.25rem;
+        line-height: 62px;
+    }
+
+    form .button:hover {
+        background:#B3FFE2;
+    }
+
+    form .input {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 28px;
+        color: #FFF;
+    }
+
+    form .text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 14px;
+        color: #FB3E3E;
+    }
+
+    footer {
+        justify-content: end;
+    }
+
+    img.footer-image {
+        display: inline;
+        position: absolute;
+        left: 1200px;
+        bottom: -85px;
+    }
+
+
+}
+
+
 
 
 
