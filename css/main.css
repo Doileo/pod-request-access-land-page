@@ -262,7 +262,7 @@ form .button {
     form .button {
         position: absolute;
         top: -20px;
-        right: 5px;
+        right: -2px;
         width: 162px;
     }
 
