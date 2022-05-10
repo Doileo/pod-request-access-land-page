@@ -9,7 +9,7 @@
     form.classList.add("error");
     form.classList.remove("valid");
     if(eInput.value == ""){
-      text.innerText = "Email can't be blank";
+      text.innerText = "Oops! Please add your email";
     }else if (!eInput.value.match(pattern) ) { //if patter is not matched with the user's enter value
       text.innerText = "Oops! Please check your email";
     }else{
