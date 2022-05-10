@@ -329,6 +329,14 @@ form .button {
         line-height: 62px;
     }
 
+    form .button {
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        width: 162px;
+        height: 46px;
+    }
+
     form .button:hover {
         background:#B3FFE2;
     }
@@ -346,6 +354,7 @@ form .button {
         font-size: 0.75rem;
         line-height: 14px;
         color: #FB3E3E;
+        padding: 10px 10px 10px 32px;
     }
 
     footer {
@@ -358,8 +367,6 @@ form .button {
         left: 1200px;
         bottom: -85px;
     }
-
-
 }
 
 
