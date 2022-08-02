@@ -67,6 +67,10 @@ img {
     display: block;
 }
 
+ul {
+    list-style: none;
+}
+
 /* make form elements easier to work with */
 input,
 button,
